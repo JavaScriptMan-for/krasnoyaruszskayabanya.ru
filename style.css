@@ -1,0 +1,251 @@
+:root {
+    --or: orange;
+    --back: rgb(54, 51, 54);
+}
+body {
+    background-color: var(--back);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.nav {
+    display: inline;
+    margin-top: 10px;
+}
+#logo {
+    margin-left: 20px;
+    width: 65px;
+    height: auto !important;
+    margin-right: 30px;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    white-space: none;
+    color: white;
+    transition: 200ms;
+}
+a:hover {
+    color: rgb(180, 179, 179);
+}
+#main {
+    border-bottom: 2px solid orange;
+}
+.main {
+    display: flex;
+    width: 100%;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+}
+i {
+    font-size: 20px;
+    color: gray;
+}
+h1 {
+    margin-right: 250px;
+}
+#one {
+    color: white;
+    white-space: nowrap;
+}
+#two {
+    color: var(--or);
+    white-space: nowrap;
+}
+#three {
+    color: white;
+    white-space: nowrap;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+}
+.images img {
+    border: orange solid 3px
+}
+img {
+    width: 300px;
+    height: 150px;
+}
+@keyframes AnimImgOne {
+    0% {
+        content: url('./img/фото_1.jpeg');
+    }
+    50% {
+        content: url('./img/фото_2.jpeg');
+    }
+    100% {
+        content: url('./img/фото_3.jpeg');
+    }
+}
+@keyframes AnimImgTwo {
+    0% {
+        content: url('./img/фото_2.jpeg');
+    }
+    50% {
+        content: url('./img/фото_3.jpeg');
+    }
+    100% {
+        content: url('./img/фото_1.jpeg');
+    }
+}
+@keyframes AnimImgThree {
+    0% {
+        content: url('./img/фото_3.jpeg');
+    }
+    50% {
+        content: url('./img/фото_1.jpeg');
+    }
+    100% {
+        content: url('./img/фото_2.jpeg');
+    }
+}
+#oneIMG {
+    animation: AnimImgOne infinite 6s;
+    transition: 200ms;
+}
+#twoIMG {
+    animation: AnimImgTwo infinite 6s;
+    transition: 200ms;
+}
+#threeIMG {
+    animation: AnimImgThree infinite 6s;
+    transition: 200ms;
+}
+@media  screen and (max-width: 1510px) {
+    h1 {
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width: 1350px) {
+    img {
+        width: 250px
+    }
+}
+@media screen and (max-width: 1305px) {
+    span {
+        font-size: 80px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    span {
+        font-size: 60px;
+    }
+    @media screen and (max-width: 940px) {
+        img {
+            width: 200px;
+            height: 100px;
+        }
+        span {
+            font-size: 40px;
+        }
+    }
+}
+@media screen and (max-width: 785px) {
+    h1 {
+        margin-right: 50px;
+    }
+    a {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 730px) {
+    img {
+        width: 150px;
+        height: 90px;
+    }
+}
+@media screen and (max-width: 680px) {
+    img {
+        width: 150px;
+        height: 70px;
+    }
+    span {
+        font-size: 30px;
+    }
+    i {
+        font-size: 10px;
+    }
+    h1 {
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 525px) {
+    a {
+        font-size: 12px;
+    }
+    img {
+        width: 80px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 457px) {
+    a {
+        margin-right: 10px;
+    }
+    #logo {
+        margin-right: 10px;
+    }
+    span {
+        margin-right: 1px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 407px) {
+    a {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    #logo {
+        margin-right: 5px;
+    }
+    span {
+        margin-right: -10px;
+    }
+    .images img {
+        border: 1px solid orange;
+    }
+}
+@media screen and (max-width: 375px) {
+    span {
+        font-size: 20px;
+    }
+    i {
+        font-size: 5px;
+    }
+    .images {
+        margin-left: -15px;
+    }
+    a {
+        font-size: 7px;
+    }
+    h1 {
+        line-height: 25px;
+    }
+}
+@media screen and (max-width: 310px) {
+    #logo {
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    img {
+        width: 40px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 265px) {
+    span {
+        font-size: 12px;
+    }
+    .images {
+        margin-left: -35px;
+    }
+}
