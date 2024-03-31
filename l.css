@@ -91,6 +91,10 @@ table {
     position: absolute;
     margin-left: 60%;
 }
+i {
+    color: rgb(226, 181, 181);
+    font-weight: bold;
+}
 /*Адаптив*/
 @media screen and (max-width: 1400px) {
     .images img {

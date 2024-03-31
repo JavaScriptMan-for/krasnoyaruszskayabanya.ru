@@ -45,6 +45,7 @@ td a {
 }
 table {
     margin-top: 40px;
+    text-align: center;
 }
 td {
     border: 2px solid var(--or);
